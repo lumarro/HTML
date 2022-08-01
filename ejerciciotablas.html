@@ -5,11 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        table, td{
+            border: solid 1px black;
+            border-collapse:collapse;
+        }
+    </style>
 </head>
 <body>
-    <table>
-        <caption>Ejercicios de tablas</caption>
+    <table style="text-align:center">
+        <thead>
+            <tr>
+                <td colspan="3">Ejercicios de tablas</td>
+            </tr>
+        </thead>
         <tbody>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
             <tr>
                 <td>1</td>
                 <td>2</td>
@@ -28,7 +43,40 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>Apartado A</td>
+                <td colspan="3">Apartado A</td>
+            </tr>
+        </tfoot>
+    </table>
+    <table style="text-align:center">
+        </style>
+        <thead>
+            <tr>
+                <td colspan="3">Ejercicios de tablas</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td colspan="2">2</td>
+            </tr>
+            <tr>
+                <td rowspan="2">4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>9</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Apartado B</td>
             </tr>
         </tfoot>
     </table>
